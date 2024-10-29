@@ -1,0 +1,190 @@
+ /* Reset margens y paddings por defecto  */
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   /*font-family: Arial, sans-serif;*/
+    font-family: "Gill Sans", sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(33, 15, 82);
+    color: white;
+    padding: 20px;
+}
+ header .logo {
+    font-size: 25px;
+    margin-left:3vw;
+}
+
+header h3 {
+    font-size: 30px;
+    margin-right:15vw;
+}
+
+ /* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:5px;
+}
+
+/* Secciones y columnas */
+section {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid #ccc;
+    height: 100vh; /* alto pantalla completa */
+    width: 100%;
+}
+
+.left-column, .right-column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* altura maxima en columnas */
+}
+
+.left-column {
+    padding-right: 10px;
+    border-right: 1px solid #ccc;
+}
+
+.right-column {
+    padding-left: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Editor y Preview */
+#editor {
+    flex-grow: 1; /* rellena altura disponible */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding:5px;
+}
+
+textarea {
+    width: 100%;
+    height: 50%; /* Toma el 50% de la altura dentro de #editor */
+    resize: none;
+    border: 1px solid #ccc;
+    padding:4px;
+}
+
+.preview {
+    flex-grow: 1; /* rellena la altura disponile */
+    display: flex;
+    flex-direction: column;
+    padding:5px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+   /* border: none;  Elimina bordes */
+    border: 1px solid #ccc;
+}
+
+h2 {
+    color: red;
+    background-color: white;
+    margin-bottom: 15px;
+}
+
+/* Menu y Botones */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    background-color: white;
+    justify-content: center;
+}
+
+.menu a {
+    color: white;
+    background-color: red;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 25px; /* bordes redondeados */
+    border: 2px solid maroon;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.menu a:hover {
+    background-color: rgba(105, 0, 0, 0.5); /* Transparente*/
+}
+hr{
+   height: 2px;
+   background-color: red;
+   border: none;
+}
+
+.miboton{
+   width:25%;
+   color: white;
+   background-color: red;
+   padding: 10px 15px;
+   text-decoration: none;
+   border-radius: 25px; /* bordes redondeados */
+   border: 2px solid maroon;
+   transition: background-color 0.3s;
+}
+.miboton:hover{
+  background-color: rgba(105, 0, 0, 0.5); /* Transparente*/
+}
+/* "Back to Top" Button */
+#top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: red;
+    color: white;
+    border: 2px solid maroon;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    display: none; /* Initially hidden */
+    transition: background-color 0.3s;
+}
+#top-button:hover {
+   background-color: rgba(105, 0, 0, 0.5); /* Transparente */
+}
+
+/* Footer Styling */
+footer {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+        padding: 0;
+    }
+}
