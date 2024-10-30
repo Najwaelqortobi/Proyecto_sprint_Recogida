@@ -192,6 +192,18 @@ ul li{
 }
 }
 
+.siguiente{
+    display: flex;
+    justify-content: flex-end;
+    i{
+    color: black;
+    font-weight: bold;
+    font-size: 4rem;
+    margin-top: 1.5rem;
+    margin-right: 2rem;
+    }
+}
+
 /*@media (max-width: 768px) {
     .code-section, .demo-section {
         width: 100%;
