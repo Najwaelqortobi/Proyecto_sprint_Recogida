@@ -9,8 +9,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            
+            // Si el enlace es para casos prácticos, permitir la navegación normal
+            if (href === 'casosPracticos.html') {
+                return; // Esto permite que el enlace funcione normalmente
+            }
+
+            // Para los otros enlaces, prevenir el comportamiento por defecto
             e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
+            const targetId = href.substring(1);
 
             sections.forEach(section => {
                 if (section.id === targetId) {

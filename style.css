@@ -28,12 +28,12 @@ body{
     left: 35%;
     display: block;
     text-align: center;
-    background-color: rgb(7, 7, 218);
+    background-color: wheat;
     width: 30%;
     height: 40%;
     font-size: 1.8rem;
     text-decoration: none;
-    color: aliceblue;
+    color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: 0.3rem solid rgb(18, 18, 94);
     border-radius: 2rem;
@@ -53,8 +53,14 @@ p{
    text-align: center;
 }
 
-section{
-    background-color: rgb(66, 75, 197);
+/*
+.section{
+    display: flex;
+}*/
+
+
+.section{
+    background-color: wheat;
     border: 0.2rem solid black;
     border-radius: 0.5rem;
     width: 70%;
@@ -67,3 +73,114 @@ section{
 }
 
 
+/*style casos Practicos*/
+
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.code-section{
+    background-color: #f0f0f0;
+    border: 0.1rem solid rgba(0,0,0,0.1);
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 0.8rem;
+    width: 100%;
+
+   h2{
+    font-size: 1.5rem;
+    margin-left: 1.2rem;
+    margin-bottom: 0.5rem;
+
+    }
+}
+
+pre {
+    background-color: #f0f0f0;
+    border-radius: 1rem;
+    padding: 1rem;
+    overflow-x: auto;
+    margin-top: 0.5rem;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.6rem;
+}
+
+.animated-div {
+    width: 10rem;
+    height: 10rem;
+    background: red;
+    transition: width 2s;
+}
+
+.animated-div:hover {
+    width: 300px;
+}
+
+.section{
+    display: flex;
+}
+
+.container{
+    display: flex;
+}
+
+.demo-section {
+    background: linear-gradient(145deg, #f0f0f0, #e6e6e6);
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.demo-section:hover {
+    box-shadow: 25px 25px 75px #bebebe,
+                -25px -25px 75px #ffffff;
+}
+
+.demo-section h2 {
+    font-size: 2.2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px; /* Ajusta el espaciado entre letras */
+}
+
+.demo-section p {
+    font-size: 1.6rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.animated-div {
+    width: 10rem; /* Mantiene el tamaño inicial */
+    height: 10rem; /* Mantiene el tamaño inicial */
+    background: linear-gradient(45deg, #ff6b6b, #feca57);
+    border-radius: 1rem;
+    margin: 0 auto; /* Centra el div */
+    transition: width 2s ease; /* Mantiene la transición original */
+}
+
+.animated-div:hover {
+    width: 300px; /* Cambia solo el ancho al hacer hover */
+}
+
+/*@media (max-width: 768px) {
+    .code-section, .demo-section {
+        width: 100%;
+    }
+}*/
