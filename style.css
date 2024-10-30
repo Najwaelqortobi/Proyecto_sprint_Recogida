@@ -84,7 +84,8 @@ h1 {
 .container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
+    margin-top: -2rem;
 }
 
 .code-section{
@@ -143,6 +144,7 @@ code {
                 -20px -20px 60px #ffffff;
     padding: 2rem;
     transition: all 0.3s ease;
+    margin-top: 0;
     }
 
 .demo-section:hover {
@@ -182,10 +184,10 @@ code {
 .puntos-clave{
     width: 100%;
     height: 100%;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
 ul li{
     font-size: 1.5rem;
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
     
 }
 }
