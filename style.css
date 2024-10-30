@@ -2,6 +2,7 @@
 body{
     margin: auto;
     text-decoration: none;
+    background-color: #f2f2f2;
 }
 
 
@@ -28,7 +29,7 @@ body{
     left: 35%;
     display: block;
     text-align: center;
-    background-color: wheat;
+    background-color: #e6f2ff;;
     width: 30%;
     height: 40%;
     font-size: 1.8rem;
@@ -64,7 +65,7 @@ p{
 
 
 .section{
-    background-color: wheat;
+    background-color: #e6f2ff;;
     border: 0.2rem solid black;
     border-radius: 0.5rem;
     width: 70%;
@@ -94,7 +95,7 @@ h1 {
 }
 
 .code-section{
-    background-color: #f0f0f0;
+    background-color: #e6f2ff;;
     border: 0.1rem solid rgba(0,0,0,0.1);
     border-radius: 1rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -112,7 +113,7 @@ h1 {
 }
 
 pre {
-    background-color: #f0f0f0;
+    background-color: #e6f2ff;;
     border-radius: 1rem;
     padding: 0.5rem;
     margin-top: 0.3rem;
@@ -253,7 +254,7 @@ ul li{
 }
 
 .sintaxis{
-    background-color: wheat;
+    background-color: #e6f2ff;;
     font-size: 1.5rem;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-left: 3rem;
