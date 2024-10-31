@@ -250,7 +250,7 @@ border: none;
 border-radius: 2rem;
 box-shadow: 20px 20px 60px #bebebe,
             -20px -20px 60px #ffffff;
-height: 5%;
+height: 10%;
 width: 45%;
 margin-top: -2rem;
 h2{
@@ -260,7 +260,7 @@ h2{
 }
 h2 span{
     font-size: 1.5rem;
-    margin-left: 15rem;
+    margin-left: 2rem;
 }
 }
 
@@ -284,14 +284,54 @@ h2 span{
     pre{
         margin-top: -2rem;
         background-color: transparent;
-        border: 0.2rem solid black;
 }
 code{
     font-size: 1.5rem;
     padding-bottom: 0.2rem;
 }
 }
+/************************rotate*************/
+.rotate{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 0.5rem;
+    gap: 8rem;
 
+}
+.ejemplo-rotate{
+    width: 10rem;
+    height: 5rem;
+    background: linear-gradient(45deg, #ff6b6b, #feca57);
+    border-radius: 1rem;
+   
+}
+
+.ejemplo-rotate:hover{
+    transform: rotate(45deg);
+}
+
+
+
+.demo-rotate{
+    background: linear-gradient(145deg, #f0f0f0, #e6e6e6);
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+    height: 10%;
+    width: 45%;
+    margin-top: -2rem;
+    h2{
+        font-size: 1.8rem;
+        padding-top: -2rem;
+        margin-left: 0.3rem;
+    }
+    h2 span{
+        font-size: 1.5rem;
+        margin-left: 2rem;
+    }
+    }
+/***********************rotate*************/
 /*fin ejemplo 3 */
 
 .siguiente{
