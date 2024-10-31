@@ -332,6 +332,90 @@ code{
     }
     }
 /***********************rotate*************/
+/************************scale*************/
+
+.scale{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 0.5rem;
+    gap: 8rem;
+
+}
+.ejemplo-scale{
+    width: 10rem;
+    height: 5rem;
+    background: linear-gradient(45deg, #ff6b6b, #feca57);
+    border-radius: 1rem;
+   
+}
+
+.ejemplo-scale:hover{
+    transform: scale(1.5);
+}
+
+.demo-scale{
+    background: linear-gradient(145deg, #f0f0f0, #e6e6e6);
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+    height: 10%;
+    width: 45%;
+    margin-top: -2rem;
+    h2{
+        font-size: 1.8rem;
+        padding-top: -2rem;
+        margin-left: 0.3rem;
+    }
+    h2 span{
+        font-size: 1.5rem;
+        margin-left: 2rem;
+    }
+    }
+
+/************************scale*************/
+
+/************************skew*************/
+.skew{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 0.5rem;
+    gap: 8rem;
+
+}
+.ejemplo-skew{
+    width: 10rem;
+    height: 5rem;
+    background: linear-gradient(45deg, #ff6b6b, #feca57);
+    border-radius: 1rem;
+   
+}
+
+.ejemplo-skew:hover{
+    transform: skew(20deg, 10deg);
+}
+
+.demo-skew{
+    background: linear-gradient(145deg, #f0f0f0, #e6e6e6);
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+    height: 10%;
+    width: 45%;
+    margin-top: -2rem;
+    h2{
+        font-size: 1.8rem;
+        padding-top: -2rem;
+        margin-left: 0.3rem;
+    }
+    h2 span{
+        font-size: 1.5rem;
+        margin-left: 2rem;
+    }
+    }
+
+/************************skew*************/
 /*fin ejemplo 3 */
 
 .siguiente{
