@@ -420,17 +420,45 @@ code{
 
 /*inicio ejemplo animaciones*/
 
+.ejemplo-animacion{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6rem;
+}/* margin entre nav y el primer ejemplo todo el div /la caja */
 
+@keyframes mover {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(100px); }
+    100% { transform: translateX(0); }
+  }
 
+.ejemplo-animacion-1{
+    width: 10rem;
+    height: 5rem;
+    background: linear-gradient(45deg, #ff6b6b, #feca57);
+    border-radius: 1rem;
+    animation: mover 4s ease-in-out infinite;
 
-
-
-
-
-
-
-
-
+}
+.demo-animacion-1{
+    background: linear-gradient(145deg, #f0f0f0, #e6e6e6);
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+    height: 10%;
+    width: 45%;
+    margin-top: -2rem;
+    h2{
+        font-size: 1.8rem;
+        padding-top: -2rem;
+        margin-left: 0.3rem;
+    }
+    h2 span{
+        font-size: 1.5rem;
+        margin-left: 1.5rem;
+    }
+    }
 
 /*fin ejemplo animaciones*/
 
