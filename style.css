@@ -380,7 +380,7 @@ code{
     display: flex;
     justify-content: space-around;
     margin-left: 0.5rem;
-    gap: 8rem;
+    gap: 4rem;
 
 }
 .ejemplo-skew{
@@ -411,7 +411,7 @@ code{
     }
     h2 span{
         font-size: 1.5rem;
-        margin-left: 2rem;
+        margin-left: 1.5rem;
     }
     }
 
