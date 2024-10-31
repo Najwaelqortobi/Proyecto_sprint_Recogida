@@ -91,7 +91,7 @@ h1 {
 }
 
 .code-section{
-    background-color: #e6f2ff;;
+    background-color: #e6f2ff;
     border: 0.1rem solid rgba(0,0,0,0.1);
     border-radius: 1rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -135,9 +135,9 @@ code {
     display: flex;
 }
 
-.container{
+/*.container{
     display: flex;
-}
+}*/
 
 
 .demo-section {
@@ -236,6 +236,63 @@ ul li{
 }
 
 /*fin ejemplo 2 */
+
+/*inicio ejemplo 3 */
+.translate{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.demo-translate{
+background: linear-gradient(145deg, #f0f0f0, #e6e6e6);
+border: none;
+border-radius: 2rem;
+box-shadow: 20px 20px 60px #bebebe,
+            -20px -20px 60px #ffffff;
+height: 5%;
+width: 45%;
+margin-top: -2rem;
+h2{
+    font-size: 1.8rem;
+    padding-top: -2rem;
+    margin-left: 0.3rem;
+}
+h2 span{
+    font-size: 1.5rem;
+    margin-left: 15rem;
+}
+}
+
+.ejemplo-translate{
+    width: 10rem;
+    height: 5rem;
+    background: linear-gradient(45deg, #ff6b6b, #feca57);
+    border-radius: 1rem;
+   
+}
+
+.ejemplo-translate:hover{
+    transform: translate(80px, 30px);
+}
+
+.code-transform {
+    h2{
+        font-size: 1.5rem;
+        margin-top: -2rem;
+    }
+    pre{
+        margin-top: -2rem;
+        background-color: transparent;
+        border: 0.2rem solid black;
+}
+code{
+    font-size: 1.5rem;
+    padding-bottom: 0.2rem;
+}
+}
+
+/*fin ejemplo 3 */
 
 .siguiente{
     display: flex;
