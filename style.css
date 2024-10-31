@@ -197,7 +197,7 @@ ul li{
 }
 }
 
-/*Ejemplo2*/
+/*inicio ejemplo transiciones*/
 
 #div1, #div2, #div3, #div4 {
     width: 10rem;
@@ -235,9 +235,9 @@ ul li{
     gap: 1rem;
 }
 
-/*fin ejemplo 2 */
+/*fin ejemplo transiciones */
 
-/*inicio ejemplo 3 */
+/*inicio ejemplo transformaciones */
 .translate{
     display: flex;
     justify-content: space-around;
@@ -416,7 +416,23 @@ code{
     }
 
 /************************skew*************/
-/*fin ejemplo 3 */
+/*fin ejemplo transformaciones*/
+
+/*inicio ejemplo animaciones*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*fin ejemplo animaciones*/
 
 .siguiente{
     display: flex;
@@ -444,6 +460,12 @@ span{
     
   
 }
+
+
+
+
+
+
 
 /*@media (max-width: 768px) {
     .code-section, .demo-section {
