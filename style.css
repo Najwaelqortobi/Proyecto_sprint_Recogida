@@ -109,7 +109,7 @@ h1 {
 }
 
 pre {
-    background-color: #e6f2ff;;
+    background-color: #e6f2ff;
     border-radius: 1rem;
     padding: 0.5rem;
     margin-top: 0.3rem;
@@ -281,12 +281,21 @@ h2 span{
         font-size: 1.5rem;
         margin-top: -2rem;
     }
+
+    /* pre */
     pre{
-        margin-top: -2rem;
-        background-color: transparent;
-}
+        margin-top: -3rem;
+        margin-bottom: 5rem;
+        background-color: #e6f2ff;
+        border: 0.1rem solid rgba(0,0,0,0.1);
+        border-radius: 1rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+         /* fin pre*/
+
 code{
-    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.4rem;
     padding-bottom: 0.2rem;
 }
 }
@@ -295,7 +304,6 @@ code{
     display: flex;
     justify-content: space-around;
     margin-left: 0.5rem;
-    gap: 8rem;
 
 }
 .ejemplo-rotate{
@@ -309,9 +317,28 @@ code{
 .ejemplo-rotate:hover{
     transform: rotate(45deg);
 }
+/*****elemento corregido ***/
+.code-transform{
+    width: 25%;
+    height: 60%;
+}
 
+.code-transform pre{
+    margin-top: -3rem;
+    margin-bottom: 5rem;
+    background-color: #e6f2ff;
+    border: 0.1rem solid rgba(0,0,0,0.1);
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.prob-1-resuelto{
+    margin-left: 1rem;
+}
 
-
+.prob-2-resuelto{
+    margin-left: -0.5rem;
+}
+/*****elemento corregido ***/
 .demo-rotate{
     background: linear-gradient(145deg, #f0f0f0, #e6e6e6);
     border: none;
@@ -331,6 +358,7 @@ code{
         margin-left: 2rem;
     }
     }
+
 /***********************rotate*************/
 /************************scale*************/
 
@@ -338,7 +366,6 @@ code{
     display: flex;
     justify-content: space-around;
     margin-left: 0.5rem;
-    gap: 8rem;
 
 }
 .ejemplo-scale{
@@ -380,7 +407,6 @@ code{
     display: flex;
     justify-content: space-around;
     margin-left: 0.5rem;
-    gap: 4rem;
 
 }
 .ejemplo-skew{
@@ -418,7 +444,7 @@ code{
 /************************skew*************/
 /*fin ejemplo transformaciones*/
 
-/*inicio ejemplo animaciones*/
+/*inicio ejemplo 1 animaciones*/
 
 .ejemplo-animacion{
     display: flex;
@@ -433,8 +459,8 @@ code{
   }
 
 .ejemplo-animacion-1{
-    width: 10rem;
-    height: 5rem;
+    width: 20rem;
+    height: 10rem;
     background: linear-gradient(45deg, #ff6b6b, #feca57);
     border-radius: 1rem;
     animation: mover 4s ease-in-out infinite;
@@ -447,20 +473,66 @@ code{
     box-shadow: 20px 20px 60px #bebebe,
                 -20px -20px 60px #ffffff;
     height: 10%;
-    width: 45%;
+    width: 30%;
     margin-top: -2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
     h2{
-        font-size: 1.8rem;
+        font-size: 3rem;
         padding-top: -2rem;
-        margin-left: 0.3rem;
-    }
-    h2 span{
-        font-size: 1.5rem;
-        margin-left: 1.5rem;
+        text-align: center;
     }
     }
 
-/*fin ejemplo animaciones*/
+/*fin ejemplo 1 animaciones*/
+
+/*inicio ejemplo 2 animaciones*/
+.demo-animacion-2{
+    background: linear-gradient(145deg, #f0f0f0, #e6e6e6);
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+    height: 10%;
+    width: 30%;
+    margin-top: -2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    h2{
+        font-size: 3rem;
+        padding-top: -2rem;
+        text-align: center;
+    }
+    }
+
+@keyframes cambioColor {
+        0% { background-color: red; }
+        50% { background-color: blue; }
+        100% { background-color: green; }
+          }
+      
+.ejemplo-animacion-2{
+    width: 20rem;
+    height: 10rem;
+    border-radius: 1rem;
+    animation: cambioColor 8s ease-in-out infinite;
+}
+/*prob corregido*/
+.code-animacion{
+    width: 35%;
+}
+/*prob corregido*/
+.code-animacion pre{
+    margin-top: -3rem;
+    margin-bottom: 5rem;
+    background-color: #e6f2ff;
+    border: 0.1rem solid rgba(0,0,0,0.1);
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 120%;
+    margin-top: -1.8rem;
+}
+/*fin ejemplo 2 animaciones*/
 
 .siguiente{
     display: flex;
