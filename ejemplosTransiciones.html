@@ -6,98 +6,84 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Ejemplos-Transformaciones</title>
+    <title>Ejemplos-Transiciones</title>
 </head>
 
 <body>
     <header>
-    <div class="contenedor-nav">
-        <Span>Sprint</Span>
-        <span>Efectos visuales</span>
-        <a href="index.html"><i class="fa-solid fa-house"></i></a>
-    </div>
-</header>
+        <div class="contenedor-nav">
+            <Span>Sprint</Span>
+            <span>Efectos visuales</span>
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+        </div>
+    </header>
 
-<h1>Ejemplos de Transformaciones CSS</h1>
-    
-<div class="container-transformaciones centrado">
-    <div class="translate">
-        <section class="code-transform">
+    <h1>Ejemplo de Transiciónes CSS</h1>
+        
+    <div class="container centrado">
+
+<div class="primer-container">
+<!--HTML-->
+        <section class="code-section">
+            <h2>HTML</h2>
+            <pre><code>
+&lt;div id = "div1" &gt;&lt;/div&gt;
+
+&lt;div id = "div2" &gt;&lt;/div&gt;
+
+&lt;div id = "div3" &gt;&lt;/div&gt;
+
+&lt;div id = "div4" &gt;&lt;/div&gt;
+            </code></pre>
+        </section>
+
+
+<!--CSS-->
+        <section class="code-section">
             <h2>CSS</h2>
             <pre><code>
-.ejemplo-translate{
-width: 10%;
-height: 80%;
-background-color: yellow;
-transform: translate(80px, 30px);
-                  }</code></pre>
-        </section>
-        <section class="demo-translate">
-            <h2>Demostración <span>Pasa el cursor sobre el div para ver el efecto</span></h2>
-            <div class="ejemplo-translate">
-            </div>
+#div1 {transition-timing-function: linear;}
+
+#div2 {transition-timing-function: ease-in-out;}
+
+#div3 {transition-timing-function: ease-in;}
+
+#div4 {transition-timing-function: ease-out;}
+            </code></pre>
         </section>
     </div>
-    <div class="rotate">
-
-
-
-
-<!--parte contenido copiada y pegada en cada ejemplo-->
-        <section class="code-transform">
-            <pre><code>
-.ejemplo-rotate{
-width: 10%;
-height: 80%;
-background-color: yellow;
-transform: rotate(45deg);
-                  }</code></pre>
-        </section>
-        <section class="demo-rotate">   
-            <h2>Demostración <span>Pasa el cursor sobre el div para ver el efecto</span></h2>
-            <div class="ejemplo-rotate">
-            </div>
-        </section>
-
-<!--parte del contenido copiada y pegada en cada ejemplo-->
-    </div>
-    <div class="scale">
-        <section class="code-transform">
-            <pre><code>
-.ejemplo-scale{
-width: 10%;
-height: 80%;
-background-color: yellow;
-transform: scale(1.5); 
-                  }</code></pre>
-        </section>
-        <section class="demo-scale">   
-            <h2>Demostración <span>Pasa el cursor sobre el div para ver el efecto</span></h2>
-            <div class="ejemplo-scale">
-            </div>
+<!--Demo-->
+        <div class="segundo-contenedor">
+            <div class="puntos-clave">
+            <p class="puntos-clave">
+                <ul>
+                <li>linear : Velocidad constante de principio a fin</li>
+                <li>ease-in-out : Combina ease-in y ease-out</li>
+                <li>ease-in : Comienza lentamente y acelera hacia el final</li>
+                <li>ease-out : Comienza rápidamente y desacelera hacia el final</li>
+                </ul>
+            </p>
+        </div>
+        <section class="demo-section dere-abajo">
+            <h2>Demostración</h2>
+            <p>Pasa el cursor sobre el div para ver el efecto:</p>
+           <div class="grp-div-general">
+            <div class="grp1">
+            <div id="div1"></div>
+            <div id="div2"></div>
+        </div>
+        <div class="grp-2">
+            <div id="div3"></div>
+            <div id="div4"></div>
+        </div>
         </section>
     </div>
-    <div class="skew">
-        <section class="code-transform">
-            <pre><code>
-.ejemplo-rotate{
-width: 10%;
-height: 80%;
-background-color: yellow;
-transform: skew(20deg, 10deg);
-                  }</code></pre>
-        </section>
-        <section class="demo-skew">   
-            <h2>Demostración <span>Pasa el cursor sobre el div para ver el efecto</span></h2>
-            <div class="ejemplo-skew">
-            </div>
-        </section>
     </div>
-</div>
 
-<div class="siguiente">
-    <a href="ejemplosAnimaciones.html"><i class="fa-solid fa-arrow-right"></i></a>
-    </div>
+    <div class="siguiente">
+        <a href="ejemplosTransformaciones.html"><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
 </body>
+
 
 </html>

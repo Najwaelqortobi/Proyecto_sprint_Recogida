@@ -91,7 +91,7 @@ h1 {
 }
 
 .code-section{
-    background-color: #e6f2ff;;
+    background-color: #e6f2ff;
     border: 0.1rem solid rgba(0,0,0,0.1);
     border-radius: 1rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -135,9 +135,9 @@ code {
     display: flex;
 }
 
-.container{
+/*.container{
     display: flex;
-}
+}*/
 
 
 .demo-section {
@@ -197,7 +197,7 @@ ul li{
 }
 }
 
-/*Ejemplo2*/
+/*inicio ejemplo transiciones*/
 
 #div1, #div2, #div3, #div4 {
     width: 10rem;
@@ -235,7 +235,232 @@ ul li{
     gap: 1rem;
 }
 
-/*fin ejemplo 2 */
+/*fin ejemplo transiciones */
+
+/*inicio ejemplo transformaciones */
+.translate{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.demo-translate{
+background: linear-gradient(145deg, #f0f0f0, #e6e6e6);
+border: none;
+border-radius: 2rem;
+box-shadow: 20px 20px 60px #bebebe,
+            -20px -20px 60px #ffffff;
+height: 10%;
+width: 45%;
+margin-top: -2rem;
+h2{
+    font-size: 1.8rem;
+    padding-top: -2rem;
+    margin-left: 0.3rem;
+}
+h2 span{
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+}
+
+.ejemplo-translate{
+    width: 10rem;
+    height: 5rem;
+    background: linear-gradient(45deg, #ff6b6b, #feca57);
+    border-radius: 1rem;
+   
+}
+
+.ejemplo-translate:hover{
+    transform: translate(80px, 30px);
+}
+
+.code-transform {
+    h2{
+        font-size: 1.5rem;
+        margin-top: -2rem;
+    }
+    pre{
+        margin-top: -2rem;
+        background-color: transparent;
+}
+code{
+    font-size: 1.5rem;
+    padding-bottom: 0.2rem;
+}
+}
+/************************rotate*************/
+.rotate{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 0.5rem;
+    gap: 8rem;
+
+}
+.ejemplo-rotate{
+    width: 10rem;
+    height: 5rem;
+    background: linear-gradient(45deg, #ff6b6b, #feca57);
+    border-radius: 1rem;
+   
+}
+
+.ejemplo-rotate:hover{
+    transform: rotate(45deg);
+}
+
+
+
+.demo-rotate{
+    background: linear-gradient(145deg, #f0f0f0, #e6e6e6);
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+    height: 10%;
+    width: 45%;
+    margin-top: -2rem;
+    h2{
+        font-size: 1.8rem;
+        padding-top: -2rem;
+        margin-left: 0.3rem;
+    }
+    h2 span{
+        font-size: 1.5rem;
+        margin-left: 2rem;
+    }
+    }
+/***********************rotate*************/
+/************************scale*************/
+
+.scale{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 0.5rem;
+    gap: 8rem;
+
+}
+.ejemplo-scale{
+    width: 10rem;
+    height: 5rem;
+    background: linear-gradient(45deg, #ff6b6b, #feca57);
+    border-radius: 1rem;
+   
+}
+
+.ejemplo-scale:hover{
+    transform: scale(1.5);
+}
+
+.demo-scale{
+    background: linear-gradient(145deg, #f0f0f0, #e6e6e6);
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+    height: 10%;
+    width: 45%;
+    margin-top: -2rem;
+    h2{
+        font-size: 1.8rem;
+        padding-top: -2rem;
+        margin-left: 0.3rem;
+    }
+    h2 span{
+        font-size: 1.5rem;
+        margin-left: 2rem;
+    }
+    }
+
+/************************scale*************/
+
+/************************skew*************/
+.skew{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 0.5rem;
+    gap: 4rem;
+
+}
+.ejemplo-skew{
+    width: 10rem;
+    height: 5rem;
+    background: linear-gradient(45deg, #ff6b6b, #feca57);
+    border-radius: 1rem;
+   
+}
+
+.ejemplo-skew:hover{
+    transform: skew(20deg, 10deg);
+}
+
+.demo-skew{
+    background: linear-gradient(145deg, #f0f0f0, #e6e6e6);
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+    height: 10%;
+    width: 45%;
+    margin-top: -2rem;
+    h2{
+        font-size: 1.8rem;
+        padding-top: -2rem;
+        margin-left: 0.3rem;
+    }
+    h2 span{
+        font-size: 1.5rem;
+        margin-left: 1.5rem;
+    }
+    }
+
+/************************skew*************/
+/*fin ejemplo transformaciones*/
+
+/*inicio ejemplo animaciones*/
+
+.ejemplo-animacion{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6rem;
+}/* margin entre nav y el primer ejemplo todo el div /la caja */
+
+@keyframes mover {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(100px); }
+    100% { transform: translateX(0); }
+  }
+
+.ejemplo-animacion-1{
+    width: 10rem;
+    height: 5rem;
+    background: linear-gradient(45deg, #ff6b6b, #feca57);
+    border-radius: 1rem;
+    animation: mover 4s ease-in-out infinite;
+
+}
+.demo-animacion-1{
+    background: linear-gradient(145deg, #f0f0f0, #e6e6e6);
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+    height: 10%;
+    width: 45%;
+    margin-top: -2rem;
+    h2{
+        font-size: 1.8rem;
+        padding-top: -2rem;
+        margin-left: 0.3rem;
+    }
+    h2 span{
+        font-size: 1.5rem;
+        margin-left: 1.5rem;
+    }
+    }
+
+/*fin ejemplo animaciones*/
 
 .siguiente{
     display: flex;
@@ -263,6 +488,12 @@ span{
     
   
 }
+
+
+
+
+
+
 
 /*@media (max-width: 768px) {
     .code-section, .demo-section {
